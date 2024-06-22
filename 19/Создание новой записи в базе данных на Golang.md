@@ -165,8 +165,9 @@ mysql> SELECT id, title, expires FROM snippets;
 ```
 Выполняем **SELECT** запрос, чтобы получить весь список заметок из таблицы:
 
-<table><tbody><tr><td data-settings="show"></td><td><div><p><span>mysql</span><span>&gt;</span><span> </span><span>SELECT </span><span>id</span><span>,</span><span> </span><span>title</span><span>,</span><span> </span><span>expires </span><span>FROM </span><span>snippets</span><span>;</span></p></div></td></tr></tbody></table>
-
+```sql
+SELECT id, title, expires FROM snippets;
+```
 Результат:
 
 ```shell
@@ -205,4 +206,3 @@ _, err := m.DB.Exec("INSERT INTO ... VALUES ($1, $2, $3)", ...)
 
 **Скачать**: [snippetbox-19.zip](https://golangs.org/wp-content/uploads/2021/04/snippetbox-19.zip)
 
-![](https://golangify.com/wp-content/uploads/2021/01/v.jpg)
